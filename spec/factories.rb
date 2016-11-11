@@ -40,6 +40,7 @@ FactoryGirl.define do
   end
 
   factory :user do
+    trait(:stripe) { stripe_customer_id "cus_2e3fqARc1uHtCv" }
     username { generate(:github_name) }
   end
 
